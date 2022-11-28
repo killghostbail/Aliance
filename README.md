@@ -1,3 +1,3 @@
-# html-starter
-A template to start an html project easily and fast.
+# Aliance Production
+My First project of a multi-page website.
 ### Author: Ilya Batin
