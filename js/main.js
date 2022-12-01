@@ -1,28 +1,31 @@
 const navbar = document.querySelector(".navbar");
-const logo = document.querySelector(".logo-svg use");
+const logoLight = document.querySelector(".logo-light");
+const logo = document.querySelector(".logo");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
-  logo.href.baseVal = "img/sprites.svg#logo";
+  logo.style.display = "block";
+  logoLight.style.display = "none";
 };
 const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light");
-  logo.href.baseVal = "img/sprites.svg#logo-light";
+  logo.style.display = "none";
+  logoLight.style.display = "block";
 };
 
 const openMenu = (event) => {
   // menu opening function
   menu.classList.add("is-open");
-  mMenuToggle.classList.add("close-menu")
+  mMenuToggle.classList.add("close-menu");
   document.body.style.overflow = "hidden"; // restrict site scrolling
   lightModeOn();
 };
 const closeMenu = (event) => {
   // menu closing function
   menu.classList.remove("is-open");
-  mMenuToggle.classList.remove("close-menu")
+  mMenuToggle.classList.remove("close-menu");
   document.body.style.overflow = ""; // allow site scrolling
   lightModeOff();
 };

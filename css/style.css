@@ -41,6 +41,9 @@ body {
 .phone-icon {
   fill: #5c8ee6;
 }
+.logo {
+  display: none;
+}
 .logo-svg {
   width: 9rem;
   height: 2.75rem;
@@ -270,6 +273,9 @@ body {
   }
   .header-logo {
     padding: 2rem;
+  }
+  .logo {
+    display: none;
   }
   .logo-svg {
     max-width: 6rem;
