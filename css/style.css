@@ -82,10 +82,17 @@ body {
 .header-nav {
   flex-basis: 100%;
   display: flex;
+  height: 100%;
+  align-items: center;
   list-style: none;
   padding: 0;
   padding-left: 3.125rem;
   margin: 0;
+}
+.header-nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .header-nav-item:not(:last-child) {
   margin-right: 4%;
@@ -95,6 +102,23 @@ body {
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  background-color: #5c8ee6;
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+.header-nav-link:hover::after {
+  transform: scaleX(1);
 }
 .header-phone {
   flex-shrink: 0;
@@ -258,20 +282,67 @@ body {
   background: #5c8ee6;
   width: 2.5rem;
   margin-right: 1.25rem;
+  transition: width 0.2s;
+}
+.steps-link:hover::before {
+  width: 60px;
 }
 .steps-buttons {
   display: none;
   height: 2.5rem;
   justify-content: flex-end;
 }
-.steps-button-prev, .steps-button-next {
-  background-color: #5C8EE5;
+.steps-button-prev,
+.steps-button-next {
+  background-color: #5c8ee5;
   height: 100%;
   width: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  text-decoration: none;
+  flex-basis: 33%;
+  border: 1px solid #ebebf0;
+  position: relative;
+  transition: border 0.2s;
+}
+.card:hover .card-title {
+  color: #5C8EE6;
+}
+.card:hover {
+  border-color: #5C8EE6;
+}
+.card-image {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+.card-content {
+  padding: 2.5rem 3.125rem;
+}
+.card-title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 140%;
+  color: #292d33;
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+  transition: color 0.2s;
+}
+.card-text {
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  margin-bottom: 24.625rem;
 }
 @media (max-width: 1700px) {
   html {
@@ -321,8 +392,11 @@ body {
   .slider-buttons {
     display: flex;
   }
-  .steps-buttons{
+  .steps-buttons {
     display: flex;
+  }
+  .card {
+    flex-basis: 50%;
   }
 }
 @media (max-width: 992px) {
@@ -454,6 +528,9 @@ body {
     }
     .header-content {
       padding-top: 3rem;
+    }
+    .card {
+      flex-basis: 10 0%;
     }
   }
   @media (max-width: 576px) {
