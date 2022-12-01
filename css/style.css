@@ -256,8 +256,22 @@ body {
   content: "";
   height: 1px;
   background: #5c8ee6;
-  width: 40px;
-  margin-right: 20px;
+  width: 2.5rem;
+  margin-right: 1.25rem;
+}
+.steps-buttons {
+  display: none;
+  height: 2.5rem;
+  justify-content: flex-end;
+}
+.steps-button-prev, .steps-button-next {
+  background-color: #5C8EE5;
+  height: 100%;
+  width: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 @media (max-width: 1700px) {
   html {
@@ -305,6 +319,9 @@ body {
     padding-right: 2rem;
   }
   .slider-buttons {
+    display: flex;
+  }
+  .steps-buttons{
     display: flex;
   }
 }
