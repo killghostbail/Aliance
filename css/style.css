@@ -26,10 +26,10 @@ body {
   color: #fff;
   height: 5.875rem;
   position: fixed;
-  z-index: 2;
   width: 100%;
   left: 0;
   top: 0;
+  z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
   transition: background-color 0.2s, height 0.2s;
 }
@@ -55,7 +55,7 @@ body {
   padding-top: 5.875rem;
 }
 .header-image {
-  background-image: url(../img/header-bg.jpg);
+  background-image: url("../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom -3.4375rem;
@@ -80,9 +80,9 @@ body {
 }
 .header-nav {
   display: flex;
-  flex-grow: 1;
-  height: 100%;
   align-items: center;
+  height: 100%;
+  flex-grow: 1;
   list-style: none;
   padding: 0;
   padding-left: 3.125rem;
@@ -96,24 +96,23 @@ body {
 .header-nav-item:not(:last-child) {
   margin-right: 4%;
 }
-
 .header-nav-link {
+  display: flex;
+  height: 100%;
+  align-items: center;
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
-  height: 100%;
-  display: flex;
-  align-items: center;
   position: relative;
 }
-.header-nav-link::after {
+.header-nav-link:after {
   content: "";
   width: 0px;
   height: 2px;
   position: absolute;
   bottom: -1px;
   background-color: #5c8ee6;
-  transition: transform 0.2s;
+  transition: width 0.2s;
   right: 0;
   left: auto;
 }
@@ -165,7 +164,7 @@ body {
   padding-top: 9.375rem;
   position: relative;
   z-index: 1;
-  color: #ffffff;
+  color: #fff;
 }
 .header-title {
   max-width: 67.5rem;
@@ -194,14 +193,20 @@ body {
   color: #fff;
   position: relative;
 }
+.header-features-item {
+  padding: 1.75rem 3.125rem;
+  height: auto;
+  width: 18rem;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+}
 .slider-buttons {
   display: none;
-  height: 2.75rem;
+  height: 44px;
   position: relative;
   z-index: 3;
 }
-.slider-button-next,
-.slider-button-prev {
+.slider-button-prev,
+.slider-button-next {
   height: 100%;
   flex-basis: 50%;
   border: 1px solid rgba(235, 235, 240, 0.2);
@@ -209,12 +214,6 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-.header-features-item {
-  padding: 1.75rem 3.125rem;
-  height: auto;
-  width: 18rem;
-  border: 1px solid rgba(235, 235, 240, 0.2);
 }
 .header-button {
   padding: 1.625rem 3.75rem;
@@ -260,7 +259,7 @@ body {
   display: flex;
   align-items: center;
 }
-.steps-num::after {
+.steps-num:after {
   content: "";
   height: 1px;
   background: #ebebf0;
@@ -292,27 +291,27 @@ body {
   line-height: 160%;
   color: #5c8ee6;
 }
-.button-link::before {
+.button-link:before {
   content: "";
   height: 1px;
   background: #5c8ee6;
-  width: 2.5rem;
+  width: 40px;
   margin-right: 1.2rem;
   transition: width 0.2s;
 }
-.button-link:hover::before {
+.button-link:hover:before {
   width: 60px;
 }
 .steps-buttons {
   display: none;
-  height: 2.5rem;
+  height: 40px;
   justify-content: flex-end;
 }
 .steps-button-prev,
 .steps-button-next {
-  background-color: #5c8ee5;
+  background: #5c8ee6;
   height: 100%;
-  width: 3.75rem;
+  width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -338,13 +337,6 @@ body {
 .card:hover {
   border-color: #5c8ee6;
 }
-.card-image {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-}
 .card-content {
   padding: 2.5rem 3.125rem;
   padding-bottom: 23.6rem;
@@ -364,12 +356,19 @@ body {
   color: #828a99;
   margin-bottom: 1rem;
 }
-.trademark-cards {
-  display: flex;
-  margin-top: 3.1rem;
+.card-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 100%;
 }
 .section-trademark {
   margin-top: 1.2rem;
+}
+.trademark-cards {
+  display: flex;
+  margin-top: 3.1rem;
 }
 .trademark-card {
   flex-basis: 50%;
@@ -442,7 +441,7 @@ body {
   justify-content: flex-end;
 }
 .founder-text {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 1rem;
   line-height: 160%;
   color: #828a99;
@@ -479,7 +478,7 @@ body {
   flex-wrap: wrap;
   margin-top: 1.9rem;
 }
-.clinets-logo-item {
+.clients-logo-item {
   flex-basis: 33.33%;
   min-height: 10rem;
   border: 1px solid #ebebf0;
@@ -487,6 +486,11 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  filter: grayscale(100%);
+  transition: filter 0.2s;
+}
+.clients-logo-item:hover {
+  filter: grayscale(0%);
 }
 .clients-logo {
   max-width: 100%;
@@ -514,7 +518,7 @@ body {
   .header-nav {
     padding-left: 2rem;
   }
-  .header-nav-item::not(:last-child) {
+  .header-nav-item:not(:last-child) {
     margin-right: 1rem;
   }
   .header-phone {
@@ -529,7 +533,7 @@ body {
     display: none;
   }
   .navbar {
-    height: 5rem;
+    height: 5.8rem;
   }
   .navbar-button {
     padding-left: 2rem;
@@ -569,17 +573,24 @@ body {
     justify-content: center;
     border: none;
   }
+  .logo-svg {
+    max-width: 10rem;
+  }
+  .navbar-button {
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+  }
   .mobile-menu-toggle {
     width: 80px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.8rem;
+    padding: 2.3rem 2.5rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
   .navbar-light .mobile-menu-line {
-    background-color: #292d33;
+    background-color: #333;
   }
   .mobile-menu-line {
     height: 1px;
@@ -595,7 +606,7 @@ body {
   }
   .navbar-button .button-icon {
     display: block;
-    fill: #fff;
+    fill: #ffffff;
   }
   .mobile-menu {
     position: fixed;
@@ -625,29 +636,29 @@ body {
   .mobile-menu-link {
     text-decoration: none;
     font-weight: 700;
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 160%;
     color: #292d33;
   }
   .mobile-submenu {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     padding-left: 1rem;
     margin-top: 1rem;
   }
   .mobile-submenu-link {
     text-decoration: none;
+    color: #828a99;
     font-size: 14px;
     line-height: 160%;
-    color: #828a99;
   }
   .mobile-phone {
     display: block;
     font-weight: 600;
     font-size: 20px;
     line-height: 160%;
-    text-decoration-line: underline;
     color: #292d33;
+    text-decoration-line: underline;
     border-top: 1px solid #ebebf0;
     padding-top: 2rem;
     margin-bottom: 1.5rem;
@@ -691,7 +702,7 @@ body {
     font-size: 4rem;
   }
   .header-content {
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
   .card {
     flex-basis: 100%;
@@ -705,12 +716,6 @@ body {
 @media (max-width: 576px) {
   .container {
     max-width: 90%;
-  }
-  .header-title {
-    font-size: 2rem;
-  }
-  .header-content {
-    padding-top: 2rem;
   }
   .trademark-card {
     grid-template-areas:
