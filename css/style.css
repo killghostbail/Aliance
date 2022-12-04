@@ -267,7 +267,7 @@ body {
   margin-top: 0.625rem;
   margin-bottom: 1.25rem;
 }
-.steps-link {
+.button-link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -276,7 +276,7 @@ body {
   line-height: 160%;
   color: #5c8ee6;
 }
-.steps-link::before {
+.button-link::before {
   content: "";
   height: 1px;
   background: #5c8ee6;
@@ -284,7 +284,7 @@ body {
   margin-right: 1.25rem;
   transition: width 0.2s;
 }
-.steps-link:hover::before {
+.button-link:hover::before {
   width: 60px;
 }
 .steps-buttons {
@@ -392,6 +392,70 @@ body {
 .trademark-card:hover .trademark-card-title {
   color: #5c8ee6;
 }
+.founder {
+  min-height: 41.25rem;
+  position: relative;
+}
+.founder-photo {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+.founder-content {
+  max-width: 45rem;
+}
+.founder-content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.founder-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+}
+.clients-wrapper {
+  display: flex;
+  gap: 3.125rem;
+}
+.clients-content {
+  flex-basis: 50%;
+}
+.clients-list {
+  list-style-type: none;
+  padding: 0;
+  columns: 2 auto;
+}
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #292d33;
+}
+.clients-logo-list {
+  flex-shrink: 10;
+  display: flex;
+  flex-wrap: wrap;
+}
+.clinets-logo-item {
+  flex-basis: 33%;
+  border: 1px solid #ebebf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.clients-logo {
+  max-width: 100%;
+  width: 70px;
+  height: 70px;
+}
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -448,6 +512,12 @@ body {
   }
   .trademark-card {
     grid-template-columns: auto auto;
+  }
+  .founder-content {
+    max-width: 35rem;
+  }
+  .clients-content {
+    flex-basis: 60%;
   }
 }
 @media (max-width: 992px) {
@@ -585,6 +655,14 @@ body {
     }
     .card {
       flex-basis: 10 0%;
+    }
+    .founder-photo {
+      position: relative;
+      width: 100%;
+      margin-bottom: 3.125rem;
+    }
+    .clients-wrapper {
+      flex-direction: column;
     }
   }
   @media (max-width: 576px) {
