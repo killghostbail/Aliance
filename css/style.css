@@ -53,7 +53,6 @@ body {
 }
 .header {
   padding-top: 5.875rem;
-  min-height: 100vh;
 }
 .header-image {
   background-image: url(../img/header-bg.jpg);
@@ -80,8 +79,8 @@ body {
   height: 100%;
 }
 .header-nav {
-  flex-basis: 100%;
   display: flex;
+  flex-grow: 1;
   height: 100%;
   align-items: center;
   list-style: none;
@@ -109,16 +108,19 @@ body {
 }
 .header-nav-link::after {
   content: "";
-  width: 100%;
+  width: 0px;
   height: 2px;
   position: absolute;
   bottom: -1px;
   background-color: #5c8ee6;
-  transform: scaleX(0);
   transition: transform 0.2s;
+  right: 0;
+  left: auto;
 }
 .header-nav-link:hover::after {
-  transform: scaleX(1);
+  width: 100%;
+  right: auto;
+  left: 0;
 }
 .header-phone {
   flex-shrink: 0;
@@ -133,7 +135,7 @@ body {
   color: inherit;
 }
 .button {
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 160%;
   color: #ffffff;
@@ -150,6 +152,9 @@ body {
 }
 .navbar-button .button-icon {
   display: none;
+}
+.header-button {
+  height: 100%;
 }
 .seporator {
   background: #5c8ee6;
@@ -173,6 +178,7 @@ body {
 }
 .header-text {
   max-width: 45rem;
+  font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
@@ -180,9 +186,10 @@ body {
 }
 .header-features {
   display: flex;
-  min-height: 10.5rem;
+  align-items: stretch;
   padding: 0;
   margin-top: 6.25rem;
+  margin-bottom: 0;
   list-style: none;
   color: #fff;
   position: relative;
@@ -190,6 +197,8 @@ body {
 .slider-buttons {
   display: none;
   height: 2.75rem;
+  position: relative;
+  z-index: 3;
 }
 .slider-button-next,
 .slider-button-prev {
@@ -218,14 +227,21 @@ body {
   margin-top: 1.125rem;
 }
 .section {
-  margin-top: 9.375rem;
-  margin-bottom: 9.375rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .section-title {
   font-family: "Bebas Neue";
   font-size: 3.75rem;
   line-height: 120%;
+  letter-spacing: 0.6px;
   color: #292d33;
+  margin-top: 2rem;
+  margin-bottom: 2.1rem;
+}
+.section-steps {
+  margin-top: 5.4rem;
+  margin-bottom: 0.4rem;
 }
 .steps {
   display: flex;
@@ -265,7 +281,7 @@ body {
   line-height: 160%;
   color: #828a99;
   margin-top: 0.625rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
 }
 .button-link {
   display: flex;
@@ -281,7 +297,7 @@ body {
   height: 1px;
   background: #5c8ee6;
   width: 2.5rem;
-  margin-right: 1.25rem;
+  margin-right: 1.2rem;
   transition: width 0.2s;
 }
 .button-link:hover::before {
@@ -306,9 +322,12 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.production-cards {
+  margin-top: 3rem;
+}
 .card {
   text-decoration: none;
-  flex-basis: 33%;
+  flex-basis: 33.33%;
   border: 1px solid #ebebf0;
   position: relative;
   transition: border 0.2s;
@@ -320,7 +339,7 @@ body {
   border-color: #5c8ee6;
 }
 .card-image {
-  width: 90%;
+  width: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -328,6 +347,7 @@ body {
 }
 .card-content {
   padding: 2.5rem 3.125rem;
+  padding-bottom: 23.6rem;
 }
 .card-title {
   font-weight: 400;
@@ -342,10 +362,14 @@ body {
   font-size: 1rem;
   line-height: 160%;
   color: #828a99;
-  margin-bottom: 24.625rem;
+  margin-bottom: 1rem;
 }
 .trademark-cards {
   display: flex;
+  margin-top: 3.1rem;
+}
+.section-trademark {
+  margin-top: 1.2rem;
 }
 .trademark-card {
   flex-basis: 50%;
@@ -353,6 +377,7 @@ body {
   border: 1px solid #ebebf0;
   transition: border 0.2s;
   padding: 3.125rem;
+  padding-bottom: 3.5rem;
   display: grid;
   grid-template-columns: 180px 1fr;
   grid-template-rows: auto 2fr;
@@ -363,6 +388,7 @@ body {
 }
 .trademark-card-logo {
   width: 100%;
+  height: 100%;
   fill: #828a99;
   grid-area: logo;
 }
@@ -396,10 +422,14 @@ body {
   min-height: 41.25rem;
   position: relative;
 }
+.section-founder {
+  margin-top: 5.3rem;
+  padding-top: 3rem;
+}
 .founder-photo {
   position: absolute;
   left: 0;
-  width: 40%;
+  width: 43.8%;
   top: 0;
   height: 100%;
   object-fit: cover;
@@ -417,17 +447,21 @@ body {
   line-height: 160%;
   color: #828a99;
 }
+.section-clients {
+  margin-top: 5.4rem;
+}
 .clients-wrapper {
   display: flex;
   gap: 3.125rem;
 }
 .clients-content {
-  flex-basis: 50%;
+  flex-basis: 47.6%;
 }
 .clients-list {
   list-style-type: none;
   padding: 0;
-  columns: 2 auto;
+  columns: 2 10rem;
+  margin-top: 2.4rem;
 }
 .clients-list-item {
   display: flex;
@@ -437,14 +471,17 @@ body {
   font-size: 1rem;
   line-height: 160%;
   color: #292d33;
+  margin-bottom: 1.2rem;
 }
 .clients-logo-list {
   flex-shrink: 10;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1.9rem;
 }
 .clinets-logo-item {
-  flex-basis: 33%;
+  flex-basis: 33.33%;
+  min-height: 10rem;
   border: 1px solid #ebebf0;
   display: flex;
   align-items: center;
@@ -470,9 +507,6 @@ body {
   }
   .header-logo {
     padding: 2rem;
-  }
-  .logo {
-    display: none;
   }
   .logo-svg {
     max-width: 6rem;
@@ -533,6 +567,7 @@ body {
   .header-logo {
     flex-grow: 1;
     justify-content: center;
+    border: none;
   }
   .mobile-menu-toggle {
     width: 80px;
@@ -627,6 +662,7 @@ body {
   .mobile-info-email {
     text-decoration: none;
     font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 160%;
     color: #292d33;
@@ -643,42 +679,48 @@ body {
   .trademark-cards {
     flex-direction: column;
   }
-  @media (max-width: 768px) {
-    .container {
-      max-width: 40rem;
-    }
-    .header-title {
-      font-size: 4rem;
-    }
-    .header-content {
-      padding-top: 3rem;
-    }
-    .card {
-      flex-basis: 10 0%;
-    }
-    .founder-photo {
-      position: relative;
-      width: 100%;
-      margin-bottom: 3.125rem;
-    }
-    .clients-wrapper {
-      flex-direction: column;
-    }
+  .clients-wrapper {
+    flex-direction: column;
   }
-  @media (max-width: 576px) {
-    .container {
-      max-width: 90%;
-    }
-    .header-title {
-      font-size: 2rem;
-    }
-    .header-content {
-      padding-top: 2rem;
-    }
-    .trademark-card {
-      grid-template-areas:
-        "logo title"
-        "text text";
-    }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 40rem;
+  }
+  .header-title {
+    font-size: 4rem;
+  }
+  .header-content {
+    padding-top: 3rem;
+  }
+  .card {
+    flex-basis: 100%;
+  }
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .header-title {
+    font-size: 2rem;
+  }
+  .header-content {
+    padding-top: 2rem;
+  }
+  .trademark-card {
+    grid-template-areas:
+      "logo title"
+      "text text";
+  }
+  .clients-list {
+    columns: 1;
+  }
+  .clinets-logo-item {
+    flex-basis: 50%;
   }
 }
