@@ -9,7 +9,7 @@
     <div class="trademark-cards">
       <div class="trademark-card">
         <svg class="trademark-card-logo">
-          <use href="img/sprite.svg#AGTECH"></use>
+          <use href="img/sprites.svg#AGTECH"></use>
         </svg>
         <h3 class="trademark-card-title">Автохимия AG-Tech</h3>
         <p class="trademark-card-text">
@@ -20,7 +20,7 @@
       </div>
       <div class="trademark-card">
         <svg class="trademark-card-logo">
-          <use href="img/sprite.svg#AP"></use>
+          <use href="img/sprites.svg#AP"></use>
         </svg>
         <h3 class="trademark-card-title">Автохимия AP</h3>
         <p class="trademark-card-text">

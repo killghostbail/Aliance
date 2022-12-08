@@ -63,7 +63,7 @@ body {
   padding-top: 5.875rem;
 }
 .header-image {
-  background-image: url("../img/header-bg.jpeg");
+  background-image: url("../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom -3.4375rem;
