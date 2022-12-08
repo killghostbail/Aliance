@@ -63,7 +63,7 @@ body {
   padding-top: 5.875rem;
 }
 .header-image {
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/header-bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom -3.4375rem;
@@ -174,6 +174,77 @@ body {
   z-index: 1;
   color: #fff;
 }
+.page-header {
+  padding-top: 9.375rem;
+  padding-bottom: 3.125rem;
+  color: #292d33;
+  position: relative;
+}
+.page-header-thumb {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  max-width: 30rem;
+}
+.page-header-bg-image {
+  background-image: url("../img/blog/blog-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+.page-header-bg-image:before {
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 45, 51, 0.6);
+}
+.page-header-bg-image .container {
+  position: relative;
+}
+.page-header-bg-grey {
+  background: #f0f2f5;
+}
+.page-header-title {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 120%;
+  color: inherit;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 10px;
+}
+.breadcrumbs-link {
+  text-decoration: none;
+  color: inherit;
+}
+.breadcrumbs-link {
+  color: #828a99;
+}
+.breadcrumbs-item.active .breadcrumbs-link {
+  color: #292d33;
+}
+.breadcrumbs-item:not(:last-child)::after {
+  content: "—";
+  margin-left: 10px;
+}
+.page-header-bg-image .breadcrumbs-link,
+.page-header-bg-image .breadcrumbs-item.active .breadcrumbs-link {
+  color: #fff;
+}
 .header-title {
   max-width: 67.5rem;
   font-family: "Bebas Neue";
@@ -239,7 +310,6 @@ body {
 }
 .section-title {
   font-family: "Bebas Neue";
-  font-weight: 400;
   font-size: 3.75rem;
   line-height: 120%;
   letter-spacing: 0.6px;
@@ -308,9 +378,6 @@ body {
   margin-right: 1.2rem;
   transition: width 0.2s;
 }
-.button-link:hover:before {
-  width: 60px;
-}
 .primary-buttons-wrapper {
   display: flex;
   height: 60px;
@@ -342,12 +409,6 @@ body {
   border: 1px solid #ebebf0;
   position: relative;
   transition: border 0.2s;
-}
-.card:hover .card-title {
-  color: #5c8ee6;
-}
-.card:hover {
-  border-color: #5c8ee6;
 }
 .card-content {
   padding: 2.5rem 3.125rem;
@@ -399,7 +460,7 @@ body {
 }
 .trademark-card-logo {
   width: 100%;
-  height: 100%;
+  height: auto;
   fill: #828a99;
   grid-area: logo;
 }
@@ -419,15 +480,6 @@ body {
   color: #828a99;
   grid-area: text;
   margin-top: 0.625rem;
-}
-.trademark-card:hover {
-  border-color: #5c8ee6;
-}
-.trademark-card:hover .trademark-card-logo {
-  fill: #5c8ee6;
-}
-.trademark-card:hover .trademark-card-title {
-  color: #5c8ee6;
 }
 .founder {
   min-height: 41.25rem;
@@ -490,7 +542,7 @@ body {
   flex-wrap: wrap;
   margin-top: 1.9rem;
 }
-.clients-logo-item {
+.clinets-logo-item {
   flex-basis: 33.33%;
   min-height: 10rem;
   border: 1px solid #ebebf0;
@@ -500,9 +552,6 @@ body {
   padding: 1rem;
   filter: grayscale(100%);
   transition: filter 0.2s;
-}
-.clients-logo-item:hover {
-  filter: grayscale(0%);
 }
 .clients-logo {
   max-width: 100%;
@@ -580,7 +629,7 @@ body {
   justify-content: flex-end;
 }
 .cta-form {
-  max-width: 52.5rem;
+  max-width: 51.25rem;
 }
 .cta-form-text {
   font-style: normal;
@@ -620,9 +669,10 @@ body {
   position: absolute;
   cursor: text;
   top: 1.5rem;
-  left: 1.975rem;
+  left: 1.35rem;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
+  padding: 0 0.625rem;
   color: #828a99;
   transition: top 0.2s, left 0.2s, font-size 0.2s;
 }
@@ -636,7 +686,7 @@ body {
   left: 1.25rem;
   font-size: 0.625rem;
   background-color: inherit;
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 .input.is-invalid {
   border: 1px solid red;
@@ -656,7 +706,7 @@ body {
   gap: 1.875rem;
   display: flex;
   align-items: center;
-  margin-top: 1.875rem;
+  margin-top: 1.25rem;
 }
 .cta-form-button {
   flex-shrink: 0;
@@ -855,6 +905,30 @@ body {
   display: block;
   width: 100%;
   margin-bottom: 24px;
+}
+/* hover effects */
+@media (hover: hover) {
+  .button-link:hover:before {
+    width: 60px;
+  }
+  .card:hover .card-title {
+    color: #5c8ee6;
+  }
+  .card:hover {
+    border-color: #5c8ee6;
+  }
+  .trademark-card:hover {
+    border-color: #5c8ee6;
+  }
+  .trademark-card:hover .trademark-card-logo {
+    fill: #5c8ee6;
+  }
+  .trademark-card:hover .trademark-card-title {
+    color: #5c8ee6;
+  }
+  .clinets-logo-item:hover {
+    filter: grayscale(0%);
+  }
 }
 @media (max-width: 1700px) {
   html {

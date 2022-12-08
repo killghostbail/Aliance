@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Aliance Production</title>
+    <title> Aliance Production</title>
   </head>
   <body class="front-page">
     <div class="mobile-menu">
@@ -120,7 +120,7 @@
         <div class="header-content">
           <div class="seporator"></div>
           <h1 class="header-title">
-            <?php echo "Главная страница"; ?>
+            Комплексное обеспечение товарами и расходными материалами бизнеса
           </h1>
           <p class="header-text">
             Высокий уровень вовлечения представителей целевой аудитории является
@@ -348,38 +348,8 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="section trademark section-trademark">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title">Собственные торговые марки</h2>
-        <div class="trademark-cards">
-          <div class="trademark-card">
-            <svg class="trademark-card-logo">
-              <use href="img/sprites.svg#AGTECH"></use>
-            </svg>
-            <h3 class="trademark-card-title">Автохимия AG-Tech</h3>
-            <p class="trademark-card-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </div>
-          <div class="trademark-card">
-            <svg class="trademark-card-logo">
-              <use href="img/sprites.svg#AP"></use>
-            </svg>
-            <h3 class="trademark-card-title">Автохимия AP</h3>
-            <p class="trademark-card-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </div>
-        </div>
-        <!-- /.trademark-cards -->
-      </div>
-      <!-- /.container -->
-    </section>
+    <?php $block_title = "собственные торговые марки"; 
+    include_once('./template-parts/trademarks-block.php')?>
     <section class="section founder section-founder">
       <img src="img/founder.jpg" alt="founder" class="founder-photo" />
       <div class="container">
@@ -485,31 +455,31 @@
           </div>
           <!-- /.clients-content -->
           <div class="clients-logo-list">
-            <a href="#" class="clients-logo-item">
+            <a href="#" class="clinets-logo-item">
               <img src="img/client.png" alt="" class="clients-logo" />
             </a>
-            <a href="#" class="clients-logo-item">
+            <a href="#" class="clinets-logo-item">
               <img src="img/client.png" alt="" class="clients-logo" />
             </a>
-            <a href="#" class="clients-logo-item">
+            <a href="#" class="clinets-logo-item">
               <img src="img/client.png" alt="" class="clients-logo" />
             </a>
-            <a href="#" class="clients-logo-item">
+            <a href="#" class="clinets-logo-item">
               <img src="img/client.png" alt="" class="clients-logo" />
             </a>
-            <a href="#" class="clients-logo-item">
+            <a href="#" class="clinets-logo-item">
               <img src="img/client.png" alt="" class="clients-logo" />
             </a>
-            <a href="#" class="clients-logo-item">
+            <a href="#" class="clinets-logo-item">
               <img src="img/client.png" alt="" class="clients-logo" />
             </a>
-            <a href="#" class="clients-logo-item">
+            <a href="#" class="clinets-logo-item">
               <img src="img/client.png" alt="" class="clients-logo" />
             </a>
-            <a href="#" class="clients-logo-item">
+            <a href="#" class="clinets-logo-item">
               <img src="img/client.png" alt="" class="clients-logo" />
             </a>
-            <a href="#" class="clients-logo-item">
+            <a href="#" class="clinets-logo-item">
               <img src="img/client.png" alt="" class="clients-logo" />
             </a>
           </div>
@@ -574,7 +544,6 @@
               </p>
             </a>
           </div>
-
           <div class="blog-slider-footer">
             <a href="#" class="button-link">Весь блог</a>
             <div class="blog-buttons primary-buttons-wrapper">
@@ -596,5 +565,4 @@
       </div>
       <!-- /.container -->
     </section>
-   
     <?php include_once('footer.php');?>

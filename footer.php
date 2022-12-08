@@ -57,7 +57,7 @@
             <!-- /.cta-form-footer -->
           </form>
         </div>
-        <!-- /.cta-from-wrapper -->
+        <!-- /.cta-form-wrapper -->
       </div>
     </section>
     <footer class="footer">
