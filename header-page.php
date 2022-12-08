@@ -50,7 +50,7 @@
       <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
       <div class="mobile-info">
         <svg class="phone-icon" width="24" height="24">
-          <use href="img/sprite.svg#map-marker"></use>
+          <use href="img/stes.svg#map-marker"></use>
         </svg>
         <address class="mobile-info-address">
           г. Москва, Холодильный пер. 4к1с8
@@ -59,7 +59,7 @@
       <!-- /.mobile-info -->
       <div class="mobile-info">
         <svg class="phone-icon" width="24" height="24">
-          <use href="img/sprite.svg#mail"></use>
+          <use href="img/sprites.svg#mail"></use>
         </svg>
         <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-info-email">
           a.dragunov@tdaliance.ru
@@ -75,10 +75,10 @@
       </a>
       <a href="./" class="header-logo">
         <svg class="logo-svg logo-light">
-          <use href="img/sprite.svg#logo-light"></use>
+          <use href="img/sprites.svg#logo-light"></use>
         </svg>
         <svg class="logo-svg logo-dark">
-          <use href="img/sprite.svg#logo"></use>
+          <use href="img/sprites.svg#logo"></use>
         </svg>
       </a>
       <ul class="header-nav">
@@ -100,7 +100,7 @@
       </ul>
       <div class="header-phone">
         <svg class="phone-icon" width="24" height="24">
-          <use href="img/sprite.svg#phone"></use>
+          <use href="img/sprites.svg#phone"></use>
         </svg>
         <a href="tel:+74996861014" class="header-phone-link">
           +7 (499) 686-10-14
@@ -109,7 +109,7 @@
       <!-- /.header-phone -->
       <button class="navbar-button button" data-toggle="modal" data-target="#feedback-modal">
         <svg class="button-icon" width="24" height="24">
-          <use href="img/sprite.svg#phone"></use>
+          <use href="img/sprites.svg#phone"></use>
         </svg>
         <span class="button-text">Получить консультацию</span>
       </button>
