@@ -19,10 +19,10 @@
     <div class="mobile-menu">
       <ul class="mobile-menu-nav">
         <li class="mobile-menu-nav-item">
-        <a href="./about.php" class="mobile-menu-link">О компании</a>
+          <a href="./about.php" class="mobile-menu-link">О компании</a>
         </li>
         <li class="mobile-menu-nav-item">
-        <a href="./contracts.php" class="mobile-menu-link">Контрактное производство</a>
+          <a href="./contracts.php" class="mobile-menu-link">Контрактное производство</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
               <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
@@ -38,7 +38,7 @@
           </ul>
         </li>
         <li class="mobile-menu-nav-item">
-        <a href="./trademarks.php" class="mobile-menu-link">Собственные торговые марки</a>
+          <a href="./trademarks.php" class="mobile-menu-link">Собственные торговые марки</a>
         </li>
         <li class="mobile-menu-nav-item">
           <a href="#" class="mobile-menu-link">Новости</a>
@@ -86,10 +86,10 @@
           <a href="./about.php" class="header-nav-link">О компании</a>
         </li>
         <li class="header-nav-item">
-        <a href="./contracts.php" class="header-nav-link">Контрактное производство</a>
+          <a href="./contracts.php" class="header-nav-link">Контрактное производство</a>
         </li>
         <li class="header-nav-item">
-        <a href="./trademarks.php" class="header-nav-link">Собственные торговые марки</a>
+          <a href="./trademarks.php" class="header-nav-link">Собственные торговые марки</a>
         </li>
         <li class="header-nav-item">
           <a href="#" class="header-nav-link">Новости</a>
@@ -133,6 +133,7 @@
           </button>
         </div>
         <!-- /.header-content -->
+
         <!-- основной блок слайдера -->
         <div class="swiper features-slider">
           <!-- обертка слайдера -->
@@ -173,6 +174,7 @@
               <p class="header-features-text">Оперативное производство</p>
             </li>
           </ul>
+
           <!-- кнопки навигации вперед/назад -->
           <div class="slider-buttons">
             <div class="slider-button-prev">
@@ -191,9 +193,10 @@
       </div>
       <!-- /.container -->
     </header>
+    
     <?php include_once('./template-parts/steps-block.php'); ?>
     <?php include_once('./template-parts/production-block.php'); ?>
-
+    
     <?php $trademarks_title = "собственные торговые марки"; 
     include_once('./template-parts/trademarks-block.php');
     include_once('./template-parts/founder-block.php');
@@ -209,11 +212,11 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <a href="#" class="swiper-slide blog-card">
-              <img
-                src="img/blog/blog-photo.jpg"
-                alt=""
-                class="blog-card-image"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-photo.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-photo.jpeg">
+                <img src="img/blog/blog-photo.jpeg" alt="" class="blog-card-image" />
+              </picture>
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
               </h3>
@@ -224,14 +227,13 @@
               </p>
             </a>
             <a href="#" class="swiper-slide blog-card">
-              <img
-                src="img/blog/blog-post.jpeg"
-                alt=""
-                class="blog-card-image"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-post.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-post.jpeg">
+                <img src="img/blog/blog-post.jpeg" alt="" class="blog-card-image" />
+                </picture>
               <h3 class="blog-card-title">
-                Сложно сказать, почему жизнь прекрасна
-              </h3>
+                Сложно сказать, почему жизнь прекрасна </h3>
               <p class="blog-card-text">
                 Действия представителей оппозиции, превозмогая сложившуюся
                 непростую экономическую ситуацию, в равной степени
@@ -239,11 +241,11 @@
               </p>
             </a>
             <a href="#" class="swiper-slide blog-card">
-              <img
-                src="img/blog/blog-photo.jpg"
-                alt=""
-                class="blog-card-image"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/blog/blog-photo.webp">
+                <source type="image/jpeg" srcset="img/blog/blog-photo.jpeg">
+                <img src="img/blog/blog-photo.jpeg" alt="" class="blog-card-image" />
+              </picture>
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
               </h3>
@@ -254,6 +256,7 @@
               </p>
             </a>
           </div>
+
           <div class="blog-slider-footer">
             <a href="#" class="button-link">Весь блог</a>
             <div class="blog-buttons primary-buttons-wrapper">
@@ -275,4 +278,5 @@
       </div>
       <!-- /.container -->
     </section>
+
     <?php include_once('footer.php');?>

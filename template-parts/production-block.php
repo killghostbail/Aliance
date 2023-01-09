@@ -17,7 +17,7 @@
         </div>
         <!-- /.card-content -->
         <img
-          src="img/avto-him.png"
+          src="img/cards/avto-him.png"
           alt="Автомобильная химия"
           class="card-image"
         />
@@ -32,7 +32,7 @@
         </div>
         <!-- /.card-content -->
         <img
-          src="img/household.png"
+          src="img/cards/household.png"
           alt="Бытовая химия"
           class="card-image"
         />
@@ -46,7 +46,7 @@
         </div>
         <!-- /.card-content -->
         <img
-          src="img/desinfection.png"
+          src="img/cards/desinfection.png"
           alt="Дезинфицирующие средства"
           class="card-image"
         />
@@ -60,7 +60,7 @@
           </p>
         </div>
         <!-- /.card-content -->
-        <img src="img/food.png" alt="Пищевые аэрозоли" class="card-image" />
+        <img src="img/cards/food.png" alt="Пищевые аэрозоли" class="card-image" />
       </a>
       <a href="#" class="card">
         <div class="card-content">
@@ -71,7 +71,7 @@
         </div>
         <!-- /.card-content -->
         <img
-          src="img/him.png"
+          src="img/cards/cosm.png"
           alt="Косметическая продукция"
           class="card-image"
         />
@@ -86,7 +86,7 @@
         </div>
         <!-- /.card-content -->
         <img
-          src="img/colors.png"
+          src="img/cards/colors.png"
           alt="Краски аэрозольные"
           class="card-image"
         />

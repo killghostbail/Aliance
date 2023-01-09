@@ -1,8 +1,12 @@
 <section class="cta">
       <div class="bg-grey section-cta">
-        <img src="img/cta.png" alt="call to action" class="cta-image" />
+        <picture>
+          <source type="image/webp" srcset="img/cta.webp"> 
+          <source type="image/jpeg" srcset="img/cta.png"> 
+          <img src="img/cta.png" alt="call to action" class="cta-image" />
+        </picture>
         <div class="cta-form-wrapper container">
-        <form action="handler.php" method="POST" class="cta-form">
+          <form action="handler.php" method="POST" class="cta-form">
             <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
             <p class="cta-form-text">
               Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
@@ -27,8 +31,8 @@
                 <input
                   id="user-phone"
                   type="tel"
-                  class="input phone-mask"
                   name="userphone"
+                  class="input phone-mask"
                   placeholder=" "
                   maxlength="30"
                   required
@@ -46,7 +50,7 @@
               </button>
               <div class="notify">
                 <svg class="notify-icon" width="14" height="14">
-                  <use href="img/sprites.svg#shield"></use>
+                  <use href="img/sprite.svg#shield"></use>
                 </svg>
                 <p class="notify-text">
                   Обращаясь к нам вы получаете не только профессиональную
@@ -64,12 +68,12 @@
       <div class="container">
         <div class="footer-top">
           <svg class="logo-svg footer-logo">
-            <use href="img/sprites.svg#logo"></use>
+            <use href="img/sprite.svg#logo"></use>
           </svg>
-          <a href="tel:+74996861014" class="footer-phone">+7 (499) 686-10-14</a>
+          <a href="tel:+79996861014" class="footer-phone">+7 (999) 686-10-14</a>
           <div class="footer-info">
             <svg class="phone-icon" width="24" height="24">
-              <use href="img/sprites.svg#map-marker"></use>
+              <use href="img/sprite.svg#map-marker"></use>
             </svg>
             <address class="footer-info-address">
               г. Москва, Холодильный пер. 4к1с8
@@ -78,7 +82,7 @@
           <!-- /.footer-info -->
           <div class="footer-info">
             <svg class="mail-icon" width="24" height="24">
-              <use href="img/sprites.svg#mail"></use>
+              <use href="img/sprite.svg#mail"></use>
             </svg>
             <a href="mailto:a.dragunov@tdaliance.ru" class="footer-info-email">
               a.dragunov@tdaliance.ru
@@ -88,12 +92,12 @@
           <div class="footer-social">
             <a href="#" class="footer-social-link">
               <svg class="footer-social-icon" width="24" height="24">
-                <use href="img/sprites.svg#vk"></use>
+                <use href="img/sprite.svg#vk"></use>
               </svg>
             </a>
             <a href="#" class="footer-social-link">
               <svg class="footer-social-icon" width="24" height="24">
-                <use href="img/sprites.svg#inst"></use>
+                <use href="img/sprite.svg#inst"></use>
               </svg>
             </a>
           </div>
@@ -168,10 +172,10 @@
       <!-- /.container -->
       <hr color="#ebebf0" class="footer-seporator" />
       <div class="container">
-        <div class="footer-wrapper">
+        <div class="footer-wrapper"> 
           <div class="footer-legal">
             <p class="footer-copyright">
-              &copy; <?php echo date('Y') ?> «Aliance Production». Все права защищены.
+              &copy; <?php echo date('d.m.y')?> «Aliance Production». Все права защищены.
             </p>
             <a href="#" class="footer-policy">Политики конфиденциальности</a>
           </div>
@@ -179,7 +183,7 @@
           <div class="footer-author">
             <span class="made-in">Сделано в</span>
             <svg width="52" height="11">
-              <use href="img/sprites.svg#ruso"></use>
+              <use href="img/sprite.svg#ruso"></use>
             </svg>
           </div>
           <!-- /.footer-author -->
@@ -193,7 +197,7 @@
         <h2 class="modal-title">Есть вопросы?</h2>
         <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
           <svg class="close-icon" width="24" height="24">
-            <use href="img/sprites.svg#close"></use>
+            <use href="img/sprite.svg#close"></use>
           </svg>
         </a>
         <p class="modal-text">
@@ -241,7 +245,7 @@
             </button>
             <div class="notify">
               <svg class="notify-icon" width="14" height="14">
-                <use href="img/sprites.svg#shield"></use>
+                <use href="img/sprite.svg#shield"></use>
               </svg>
               <p class="notify-text">
                 Обращаясь к нам вы получаете не только профессиональную работу,
@@ -253,13 +257,12 @@
         </form>
       </div>
     </div>
-    
     <div class="modal" id="alert-modal">
       <div class="modal-dialog">
         <h2 class="modal-title">Спасибо!</h2>
         <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
           <svg class="close-icon" width="24" height="24">
-            <use href="img/sprites.svg#close"></use>
+            <use href="img/sprite.svg#close"></use>
           </svg>
         </a>
         <p class="modal-text">
