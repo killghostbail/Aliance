@@ -50,7 +50,7 @@
               </button>
               <div class="notify">
                 <svg class="notify-icon" width="14" height="14">
-                  <use href="img/sprite.svg#shield"></use>
+                  <use href="img/sprites.svg#shield"></use>
                 </svg>
                 <p class="notify-text">
                   Обращаясь к нам вы получаете не только профессиональную
@@ -68,12 +68,12 @@
       <div class="container">
         <div class="footer-top">
           <svg class="logo-svg footer-logo">
-            <use href="img/sprite.svg#logo"></use>
+            <use href="img/sprites.svg#logo"></use>
           </svg>
           <a href="tel:+79996861014" class="footer-phone">+7 (999) 686-10-14</a>
           <div class="footer-info">
             <svg class="phone-icon" width="24" height="24">
-              <use href="img/sprite.svg#map-marker"></use>
+              <use href="img/sprites.svg#map-marker"></use>
             </svg>
             <address class="footer-info-address">
               г. Москва, Холодильный пер. 4к1с8
@@ -82,7 +82,7 @@
           <!-- /.footer-info -->
           <div class="footer-info">
             <svg class="mail-icon" width="24" height="24">
-              <use href="img/sprite.svg#mail"></use>
+              <use href="img/sprites.svg#mail"></use>
             </svg>
             <a href="mailto:a.dragunov@tdaliance.ru" class="footer-info-email">
               a.dragunov@tdaliance.ru
@@ -92,12 +92,12 @@
           <div class="footer-social">
             <a href="#" class="footer-social-link">
               <svg class="footer-social-icon" width="24" height="24">
-                <use href="img/sprite.svg#vk"></use>
+                <use href="img/sprites.svg#vk"></use>
               </svg>
             </a>
             <a href="#" class="footer-social-link">
               <svg class="footer-social-icon" width="24" height="24">
-                <use href="img/sprite.svg#inst"></use>
+                <use href="img/sprites.svg#inst"></use>
               </svg>
             </a>
           </div>
@@ -183,7 +183,7 @@
           <div class="footer-author">
             <span class="made-in">Сделано в</span>
             <svg width="52" height="11">
-              <use href="img/sprite.svg#ruso"></use>
+              <use href="img/sprites.svg#ruso"></use>
             </svg>
           </div>
           <!-- /.footer-author -->
@@ -197,7 +197,7 @@
         <h2 class="modal-title">Есть вопросы?</h2>
         <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
           <svg class="close-icon" width="24" height="24">
-            <use href="img/sprite.svg#close"></use>
+            <use href="img/sprites.svg#close"></use>
           </svg>
         </a>
         <p class="modal-text">
@@ -245,7 +245,7 @@
             </button>
             <div class="notify">
               <svg class="notify-icon" width="14" height="14">
-                <use href="img/sprite.svg#shield"></use>
+                <use href="img/sprites.svg#shield"></use>
               </svg>
               <p class="notify-text">
                 Обращаясь к нам вы получаете не только профессиональную работу,
@@ -262,7 +262,7 @@
         <h2 class="modal-title">Спасибо!</h2>
         <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
           <svg class="close-icon" width="24" height="24">
-            <use href="img/sprite.svg#close"></use>
+            <use href="img/sprites.svg#close"></use>
           </svg>
         </a>
         <p class="modal-text">
